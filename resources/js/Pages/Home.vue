@@ -303,18 +303,14 @@ export default {
                 }).then((_) => {
                     this.close();
                     this.initData();
-                }).catch((error) => {
-                    console.log(error)
-                })
+                });
             } else {
                 axios.post('/api/users', {
                     ...this.formData
-                }).then((response) => {
+                }).then((_) => {
                     this.close();
                     this.initData();
-                }).catch((error) => {
-                    console.log(error)
-                })
+                });
             }
         }
     }

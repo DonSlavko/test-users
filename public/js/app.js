@@ -5511,15 +5511,11 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
         axios.put('/api/users/' + this.editUser, _objectSpread({}, this.formData)).then(function (_) {
           _this3.close();
           _this3.initData();
-        })["catch"](function (error) {
-          console.log(error);
         });
       } else {
-        axios.post('/api/users', _objectSpread({}, this.formData)).then(function (response) {
+        axios.post('/api/users', _objectSpread({}, this.formData)).then(function (_) {
           _this3.close();
           _this3.initData();
-        })["catch"](function (error) {
-          console.log(error);
         });
       }
     }
@@ -5612,9 +5608,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
